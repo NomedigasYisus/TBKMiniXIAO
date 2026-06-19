@@ -122,45 +122,45 @@
 
         default_layer {
             bindings = <
-  &kp TAB    &kp Q           &kp W        &kp E             &kp R        &kp T         &kp Y      &kp U        &kp I              &kp O        &kp P               &kp BSPC
-  &kp LCTRL  &hm LEFT_ALT A  &hm LCTRL S  &hm LEFT_SHIFT D  &hm LWIN F   &hm TAB G     &hm TAB H  &hm RWIN J   &hm RIGHT_SHIFT K  &hm RCTRL L  &hm RIGHT_ALT SEMI  &kp DEL
-  &kp LSHFT  &kp Z           &kp X        &kp C             &kp V        &kp B         &kp N      &kp M        &kp COMMA          &kp DOT      &kp SQT             &kp RSHFT
-  &none      &none           &none        &mo 3             &lt 1 SPACE  &mt LWIN ESC  &kp ENTER  &lt 2 SPACE  &mo 4              &none        &none               &none
+  &kp TAB       &kp Q        &kp W       &kp E             &kp R        &kp T          &kp Y      &kp U        &kp I              &kp O       &kp P          &kp BSPC
+  &kp LEFT_WIN  &hm LCTRL A  &hm LALT S  &hm LEFT_SHIFT D  &hm LWIN F   &hm TAB G      &hm TAB H  &hm RWIN J   &hm RIGHT_SHIFT K  &hm RALT L  &hm RCTRL SQT  &kp DEL
+  &kp LSHFT     &kp Z        &kp X       &kp C             &kp V        &kp B          &kp N      &kp M        &kp COMMA          &kp DOT     &kp SEMI       &kp RSHFT
+  &none         &none        &none       &mo 3             &lt 1 SPACE  &mt LCTRL ESC  &kp ENTER  &lt 2 SPACE  &mo 4              &none       &none          &none
             >;
         };
 
         function {
             bindings = <
-  &trans  &tap_f1   &tap_f2    &tap_f3    &tap_f4   &tap_f5   &tap_f6   &tap_f7   &tap_f8    &tap_f9    &tap_f10  &trans
-  &trans  &kp LALT  &kp LCTRL  &kp LSHFT  &kp LWIN  &kp TAB   &kp TAB   &kp RGUI  &kp RSHFT  &kp RCTRL  &kp RALT  &trans
-  &trans  &tap_f8   &tap_f9    &tap_f10   &tap_f11  &tap_f12  &tap_f12  &tap_f11  &tap_f3    &tap_f2    &tap_f1   &trans
-  &none   &none     &none      &trans     &trans    &trans    &trans    &trans    &trans     &none      &none     &none
+  &trans  &tap_f1    &tap_f2   &tap_f3    &tap_f4   &tap_f5   &tap_f6   &tap_f7   &tap_f8    &tap_f9   &tap_f10   &trans
+  &trans  &kp LCTRL  &kp LALT  &kp LSHFT  &kp LWIN  &kp TAB   &kp TAB   &kp RGUI  &kp RSHFT  &kp RALT  &kp RCTRL  &trans
+  &trans  &tap_f8    &tap_f9   &tap_f10   &tap_f11  &tap_f12  &tap_f12  &tap_f11  &tap_f3    &tap_f2   &tap_f1    &trans
+  &none   &none      &none     &trans     &trans    &trans    &trans    &trans    &trans     &none     &none      &none
             >;
         };
 
         row {
             bindings = <
-  &trans  &none         &none      &none           &none     &none    &none          &kp PAGE_UP     &kp UP     &kp PAGE_DOWN  &kp LS(LG(S))         &trans
-  &trans  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &kp LWIN  &kp TAB  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN   &kp RIGHT      &kp LS(LG(NUMBER_4))  &trans
-  &trans  &none         &none      &none           &none     &none    &kp DEL        &kp HOME        &kp LSHFT  &kp END        &kp INS               &trans
-  &none   &none         &none      &trans          &trans    &trans   &trans         &trans          &trans     &none          &none                 &none
+  &trans  &none      &none     &none           &none     &none    &none          &kp PAGE_UP     &kp UP     &kp PAGE_DOWN  &kp LS(LG(S))         &trans
+  &trans  &kp LCTRL  &kp LALT  &kp LEFT_SHIFT  &kp LWIN  &kp TAB  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN   &kp RIGHT      &kp LS(LG(NUMBER_4))  &trans
+  &trans  &none      &none     &none           &none     &none    &kp DEL        &kp HOME        &kp LSHFT  &kp END        &kp INS               &trans
+  &none   &none      &none     &trans          &trans    &trans   &trans         &trans          &trans     &none          &none                 &none
             >;
         };
 
         number {
             bindings = <
   &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N7  &kp N8  &kp N9  &none    &none      &trans
-  &trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp N4  &kp N5  &kp N6  &none    &none      &trans
+  &trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp N4  &kp N5  &kp N6  &kp N0   &none      &trans
   &trans  &none   &none   &none   &none   &none   &kp N1  &kp N2  &kp N3  &kp DOT  &kp COMMA  &trans
-  &none   &none   &none   &trans  &trans  &trans  &trans  &trans  &kp N0  &none    &none      &none
+  &none   &none   &none   &trans  &trans  &trans  &trans  &trans  &trans  &none    &none      &none
             >;
         };
 
         simbol {
             bindings = <
   &trans  &kp EXCL  &kp AT    &kp LBKT  &kp RBKT  &kp PRCNT  &kp PIPE   &kp BSLH   &kp SLASH  &kp ASTRK  &kp QMARK  &trans
-  &trans  &kp HASH  &kp DLLR  &kp LPAR  &kp RPAR  &kp CARET  &kp GRAVE  &kp EQUAL  &kp MINUS  &kp PLUS   &kp COLON  &trans
-  &trans  &none     &none     &kp LBRC  &kp RBRC  &kp AMPS   &kp TILDE  &kp UNDER  &kp LT     &kp GT     &kp DQT    &trans
+  &trans  &kp HASH  &kp DLLR  &kp LPAR  &kp RPAR  &kp CARET  &kp GRAVE  &kp EQUAL  &kp MINUS  &kp PLUS   &kp DQT    &trans
+  &trans  &none     &none     &kp LBRC  &kp RBRC  &kp AMPS   &kp TILDE  &kp UNDER  &kp LT     &kp GT     &kp COLON  &trans
   &none   &none     &none     &trans    &trans    &trans     &trans     &trans     &trans     &none      &none      &none
             >;
         };
